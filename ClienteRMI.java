@@ -13,7 +13,7 @@ import java.rmi.*;
 		}
 		static void acomoda_matriz(int[][] C,int[][] A,int renglon,int columna)
 		{
-			int N = A.length;
+			int N = A.length*2;
 			for (int i = 0; i < N/2; i++)
 				for (int j = 0; j < N/2; j++)
 					C[i + renglon][j + columna] = A[i][j];
